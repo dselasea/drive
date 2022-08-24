@@ -1,4 +1,4 @@
-.drive {
+.driver {
     max-width: 1040px;
     margin: auto;
     display: grid;
@@ -36,4 +36,25 @@
 .driver button:hover {
     background-color: #4733b7;
     transition: background-color 1s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 920px){
+    .driver {
+        grid-template-columns: 1fr;
+    }
+
+    .driver img {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .driver .left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .driver h2 {
+        padding-top: 10%;
+    }
 }
